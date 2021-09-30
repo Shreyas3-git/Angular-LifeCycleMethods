@@ -1,0 +1,4 @@
+<p>parent works!</p>
+<button mat-button (click)="toggleChild()">Toggle child</button>
+<input type="text" [(ngModel)]="channelName"/>
+<app-child *ngIf="isChild" [channelName]="channelName"></app-child>
